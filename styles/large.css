@@ -1,0 +1,153 @@
+@media screen and (min-width: 768px) {
+    header {
+        padding: 1.5rem 3rem;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header span {
+        font-size: 1.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    .navigation li {
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navigation li:last-child {
+        border-right: none;
+    }
+
+    .navigation a {
+        padding: 1rem 2rem;
+        white-space: nowrap;
+    }
+
+    .navigation a:hover {
+        background-color: var(--secondary-color);
+        transform: translateY(-2px);
+        transition: all 0.3s ease;
+    }
+
+    main {
+        padding: 3rem;
+    }
+
+    main h1 {
+        font-size: 3rem;
+    }
+
+    .about-photo {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-me,
+    .student-photo {
+        flex: 1;
+    }
+
+    .about-me {
+        flex: 2;
+    }
+
+    .student-photo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .student-photo img {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .course-buttons {
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+
+    .course-buttons button {
+        flex: none;
+        min-width: 120px;
+        padding: 1rem 2rem;
+    }
+
+    #courseList {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .course {
+        padding: 2rem;
+    }
+
+    .course h3 {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        padding: 3rem;
+    }
+
+    .socials img {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    .course:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .socials a:hover {
+        transform: scale(1.3);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        padding: 4rem;
+        max-width: 1400px;
+    }
+
+    .about-photo {
+        gap: 3rem;
+    }
+
+    #courseList {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+    }
+
+    .course {
+        padding: 2.5rem;
+    }
+
+    main h1 {
+        font-size: 3.5rem;
+    }
+}
