@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Business Directory - Ibadan Chamber of Commerce</title>
+        <meta
+            name="description"
+            content="Discover local businesses in Ibadan Nigeria. Browse our comprehensive directory of chamber members including contact information, services, and membership levels."
+        />
+        <meta name="author" content="Emeka MacDonald Umeh" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+
+        <!-- Facebook Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Business Directory - Ibadan Chamber of Commerce"
+        />
+        <meta
+            property="og:description"
+            content="Discover local businesses in Ibadan Nigeria. Browse our comprehensive directory of chamber members including contact information, services, and membership levels."
+        />
+        <meta
+            property="og:image"
+            content="https://donumeh.github.io/wdd231/chamber/images/logo.png"
+        />
+        <meta
+            property="og:url"
+            content="https://donumeh.github.io/wdd231/chamber/directory.html"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Ibadan Chamber of Commerce" />
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Business Directory - Ibadan Chamber of Commerce"
+        />
+        <meta
+            name="twitter:description"
+            content="Discover local businesses in Ibadan, Nigeria. Browse our comprehensive directory of chamber members."
+        />
+        <meta
+            name="twitter:image"
+            content="https://donumeh.github.io/wdd231/chamber/images/logo.png"
+        />
+
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="./styles/chamber.css" />
+
+        <!-- Preconnect for performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Ibadan Chamber of Commerce",
+                "description": "The Ibadan Chamber of Commerce serves as a resource hub for businesses in the city of Ibadan, promoting local economic growth and fostering community connections.",
+                "url": "https://donumeh.github.io/wdd231/chamber/",
+                "logo": "https://donumeh.github.io/wdd231/chamber/images/logo.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1, Adeniran Oyinlola Avenue, Opposite Anfani Roundabout",
+                    "addressLocality": "Off Ring Road, Challenge Area, P.M.B. 5168, Dugbe, Ibadan",
+                    "addressCountry": "Nigeria",
+                    "postalCode": "2000253"
+                },
+                "telephone": "+243705778489, +2348143908143, +2348137303095 ",
+                "email": "info@ibadanchamber.org.ng"
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img
+                        src="./images/logo.png"
+                        alt="Ibadan Chamber of Commerce Logo"
+                        width="50"
+                        height="50"
+                    />
+                    <h1>Ibadan Chamber of Commerce</h1>
+                </a>
+
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="directory.html" class="active"
+                                >Directory</a
+                            >
+                        </li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                    </ul>
+
+                    <button
+                        class="hamburger"
+                        aria-label="Toggle navigation menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        🌙
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <h1 class="page-title">Business Directory</h1>
+
+            <!-- Directory Controls -->
+            <div class="directory-controls">
+                <div class="directory-info">
+                    <p>
+                        Discover local businesses in Ibadan and connect with
+                        chamber members.
+                    </p>
+                </div>
+
+                <div class="view-toggle">
+                    <button
+                        id="grid-view"
+                        class="toggle-btn active"
+                        aria-label="Grid view"
+                    >
+                        📊 Grid View
+                    </button>
+                    <button
+                        id="list-view"
+                        class="toggle-btn"
+                        aria-label="List view"
+                    >
+                        📋 List View
+                    </button>
+                </div>
+            </div>
+
+            <!-- Optional Search and Filter-->
+            <div class="directory-filters" style="display: none">
+                <div class="search-container">
+                    <input
+                        type="text"
+                        id="member-search"
+                        placeholder="Search businesses..."
+                        aria-label="Search businesses"
+                    />
+                    <button id="search-btn" aria-label="Search">🔍</button>
+                </div>
+
+                <div class="filter-container">
+                    <label for="membership-filter">Filter by membership:</label>
+                    <select
+                        id="membership-filter"
+                        aria-label="Filter by membership level"
+                    >
+                        <option value="all">All Members</option>
+                        <option value="3">Gold Members</option>
+                        <option value="2">Silver Members</option>
+                        <option value="1">Regular Members</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Directory Container -->
+            <div id="directory-container" class="directory-container">
+                <!-- Member cards/list items will be dynamically inserted here -->
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Contact Information</h3>
+                        <p><strong>Ibadan Chamber of Commerce</strong></p>
+                        <p>
+                            1, Adeniran Oyinlola Avenue, Opposite Anfani
+                            <br />
+                            Roundabout, Off Ring Road, Challenge Area, P.M.B.
+                            <br />
+                            5168, Dugbe, Ibadan. Oyo State, Nigeria.
+                        </p>
+                        <p>
+                            Phone:
+                            <a href="tel:+234705778489">0705778489</a>
+                        </p>
+                        <p>
+                            Email:
+                            <a href="mailto:info@ibadanchamber.org.ng"
+                                >info@ibadanchamber.org.ng</a
+                            >
+                        </p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="directory.html">Business Directory</a></p>
+                        <p><a href="#">Join the Chamber</a></p>
+                        <!--join.html: To be done later-->
+                        <p><a href="discover.html">Discover Ibadan</a></p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="YouTube"
+                            >
+                                📺
+                            </a>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Twitter"
+                            >
+                                <img
+                                    src="images/twitter-svgrepo-com.svg"
+                                    width="20"
+                                    height="20"
+                                    alt="twitter logo"
+                                />
+                            </a>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="LinkedIn"
+                            >
+                                <img
+                                    src="./images/linkedin-svgrepo-com.svg"
+                                    width="20"
+                                    height="20"
+                                    alt="linkedin logo"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="development-info">
+                            <p><strong>WDD231 Class Project</strong></p>
+                            <p>Emeka MacDonald Umeh</p>
+                            <p>
+                                &copy;
+                                <span id="copyright-year">2025</span> Ibadan
+                                Chamber of Commerce
+                            </p>
+                            <p>
+                                Last Modified: <span id="last-modified"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="./scripts/directory.js"></script>
+
+        <!-- Optional: Analytics (Google Analytics 4) -->
+        <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    --></body>
+</html>

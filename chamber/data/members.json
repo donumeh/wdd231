@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Olubadan Trading Co.",
+    "address": "123 Dugbe Market Road, Ibadan, Oyo State, Nigeria",
+    "phone": "234-555-0101",
+    "website": "https://olubadantrading.com",
+    "image": "olubadan-trading.jpg",
+    "membershipLevel": 3,
+    "description": "Premier trading company specializing in authentic Nigerian goods, textiles, and spices.",
+    "yearEstablished": 1987,
+    "services": [
+      "Import/Export",
+      "Wholesale Trading",
+      "Local Market Distribution"
+    ]
+  },
+  {
+    "name": "Ibadan Tech Hub",
+    "address": "456 Innovation Drive, Bodija, Ibadan, Oyo State, Nigeria",
+    "phone": "234-555-0202",
+    "website": "https://ibadantechhub.com",
+    "image": "ibadan-tech.jpg",
+    "membershipLevel": 2,
+    "description": "Leading IT services and digital transformation provider supporting businesses across Oyo State.",
+    "yearEstablished": 2012,
+    "services": ["IT Support", "Web Development", "Digital Marketing"]
+  },
+  {
+    "name": "University of Ibadan Press",
+    "address": "789 Academic Crescent, UI Campus, Ibadan, Oyo State, Nigeria",
+    "phone": "234-555-0303",
+    "website": "https://uipress.edu.ng",
+    "image": "ui-press.jpg",
+    "membershipLevel": 3,
+    "description": "Academic publishing house advancing research and preserving scholarly works in Nigeria and Africa.",
+    "yearEstablished": 1965,
+    "services": [
+      "Academic Publishing",
+      "Research Services",
+      "Educational Materials"
+    ]
+  },
+  {
+    "name": "Oyo Transit Services",
+    "address": "321 Iwo Road Terminal, Ibadan, Oyo State, Nigeria",
+    "phone": "234-555-0404",
+    "website": "https://oyotransit.com",
+    "image": "oyo-transit.jpg",
+    "membershipLevel": 2,
+    "description": "Reliable transport company offering cargo and passenger services across Ibadan and beyond.",
+    "yearEstablished": 1980,
+    "services": ["Cargo Transport", "Passenger Services", "City Tours"]
+  },
+  {
+    "name": "Amala Skye Restaurant",
+    "address": "654 Mokola Roundabout, Ibadan, Oyo State, Nigeria",
+    "phone": "234-555-0505",
+    "website": "https://amalaskye.com",
+    "image": "amala-skye.jpg",
+    "membershipLevel": 1,
+    "description": "Authentic Yoruba cuisine served with a modern flair, featuring traditional recipes passed down through generations.",
+    "yearEstablished": 2007,
+    "services": ["Fine Dining", "Catering", "Cooking Classes"]
+  },
+  {
+    "name": "Ibadan Heritage Foundation",
+    "address": "987 Mapo Hill, Ibadan, Oyo State, Nigeria",
+    "phone": "234-555-0606",
+    "website": "https://ibadanheritage.org",
+    "image": "ibadan-heritage.jpg",
+    "membershipLevel": 3,
+    "description": "Non-profit organization dedicated to preserving Yoruba manuscripts, cultural artifacts, and historical sites.",
+    "yearEstablished": 1998,
+    "services": [
+      "Document Preservation",
+      "Historical Research",
+      "Cultural Tours"
+    ]
+  },
+  {
+    "name": "Oyo Solar Power Ltd.",
+    "address": "147 Energy Crescent, Challenge, Ibadan, Oyo State, Nigeria",
+    "phone": "234-555-0707",
+    "website": "https://oyosolar.com",
+    "image": "oyo-solar.jpg",
+    "membershipLevel": 2,
+    "description": "Renewable energy solutions company specializing in solar installations for homes and businesses in Oyo State.",
+    "yearEstablished": 2016,
+    "services": [
+      "Solar Installation",
+      "Energy Consulting",
+      "Maintenance Services"
+    ]
+  },
+  {
+    "name": "Ibadan Crafts Collective",
+    "address": "258 Dugbe Crafts Village, Ibadan, Oyo State, Nigeria",
+    "phone": "234-555-0808",
+    "website": "https://ibadancrafts.com",
+    "image": "ibadan-crafts.jpg",
+    "membershipLevel": 1,
+    "description": "Cooperative of local artisans producing and selling traditional Yoruba crafts, beadwork, and textiles.",
+    "yearEstablished": 2000,
+    "services": ["Handmade Crafts", "Custom Jewelry", "Artisan Workshops"]
+  },
+  {
+    "name": "Agodi Green Farms",
+    "address": "369 Agodi Gate Road, Ibadan, Oyo State, Nigeria",
+    "phone": "234-555-0909",
+    "website": "https://agodigreenfarms.com",
+    "image": "agodi-farms.jpg",
+    "membershipLevel": 1,
+    "description": "Innovative agricultural company focusing on sustainable farming and drought-resistant crops in Oyo State.",
+    "yearEstablished": 2010,
+    "services": ["Sustainable Farming", "Crop Consulting", "Irrigation Systems"]
+  },
+  {
+    "name": "Ibadan Medical Center",
+    "address": "741 Ring Road, Ibadan, Oyo State, Nigeria",
+    "phone": "234-555-1010",
+    "website": "https://ibadanmedical.com",
+    "image": "ibadan-medical.jpg",
+    "membershipLevel": 3,
+    "description": "Comprehensive healthcare facility offering primary care, emergency services, and specialized treatments for the Ibadan community.",
+    "yearEstablished": 1992,
+    "services": ["Primary Care", "Emergency Services", "Specialized Treatment"]
+  }
+]

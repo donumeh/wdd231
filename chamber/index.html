@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ibadan Chamber of Commerce - Home</title>
+        <meta
+            name="description"
+            content="Welcome to the Ibadan Chamber of Commerce. Supporting local businesses and fostering economic growth in Ibadan, Oyo State, Nigeria."
+        />
+        <meta name="author" content="Emeka MacDonald Umeh" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+
+        <!-- Facebook Open Graph Meta Tags -->
+        <meta property="og:title" content="Ibadan Chamber of Commerce - Home" />
+        <meta
+            property="og:description"
+            content="Welcome to the Ibadan Chamber of Commerce. Supporting local businesses and fostering economic growth in Ibadan, Oyo state."
+        />
+        <meta
+            property="og:image"
+            content="https://donumeh.github.io/wdd231/chamber/images/logo.png"
+        />
+        <meta
+            property="og:url"
+            content="https://donumeh.github.io/wdd231/chamber/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Ibadan Chamber of Commerce" />
+
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="./styles/chamber.css" />
+
+        <!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Ibadan Chamber of Commerce",
+                "description": "The Ibadan Chamber of Commerce serves as a resource hub for businesses in the city of Ibadan, promoting local economic growth and fostering community connections.",
+                "url": "https://donumeh.github.io/wdd231/chamber/",
+                "logo": "https://donumeh.github.io/wdd231/chamber/images/logo.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1, Adeniran Oyinlola Avenue, Opposite Anfani Roundabout",
+                    "addressLocality": "Off Ring Road, Challenge Area, P.M.B. 5168, Dugbe, Ibadan",
+                    "addressCountry": "Nigeria",
+                    "postalCode": "2000253"
+                },
+                "telephone": "+243705778489, +2348143908143, +2348137303095 ",
+                "email": "info@ibadanchamber.org.ng"
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img
+                        src="./images/logo.png"
+                        alt="Ibadan Chamber of Commerce Logo"
+                        width="50"
+                        height="50"
+                    />
+                    <h1>Ibadan Chamber of Commerce</h1>
+                </a>
+
+                <nav>
+                    <ul class="nav-menu">
+                        <!--To review later-->
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                        <!--join.html To be done soon-->
+                        <li><a href="discover.html">Discover</a></li>
+                    </ul>
+
+                    <button
+                        class="hamburger"
+                        aria-label="Toggle navigation menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        🌙
+                        <!--To modify later-->
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div
+                class="hero-section"
+                style="
+                    text-align: center;
+                    padding: 3rem 1rem;
+                    background: linear-gradient(135deg, #2c5530, #4a7c59);
+                    color: white;
+                    margin-bottom: 2rem;
+                    border-radius: 8px;
+                "
+            >
+                <h1 style="font-size: 2.5rem; margin-bottom: 1rem">
+                    Welcome to Ibadan Chamber of Commerce
+                </h1>
+                <p
+                    style="
+                        font-size: 1.2rem;
+                        margin-bottom: 2rem;
+                        max-width: 600px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    "
+                >
+                    Supporting local businesses and fostering economic growth in
+                    the historic city of Ibadan, Oyo State, Nigeria.
+                </p>
+                <div
+                    style="
+                        display: flex;
+                        gap: 1rem;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    "
+                >
+                    <a
+                        href="directory.html"
+                        style="
+                            background: #8fbc8f;
+                            color: #2c5530;
+                            padding: 1rem 2rem;
+                            text-decoration: none;
+                            border-radius: 25px;
+                            font-weight: bold;
+                            display: inline-block;
+                        "
+                    >
+                        📂 Browse Directory
+                    </a>
+
+                    <!-- join.html coming up-->
+                    <a
+                        href="#"
+                        style="
+                            background: transparent;
+                            color: white;
+                            padding: 1rem 2rem;
+                            text-decoration: none;
+                            border: 2px solid white;
+                            border-radius: 25px;
+                            font-weight: bold;
+                            display: inline-block;
+                        "
+                    >
+                        🤝 Join Chamber
+                    </a>
+                </div>
+            </div>
+
+            <div
+                style="
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 2rem;
+                    margin-bottom: 3rem;
+                "
+            >
+                <!-- Quick Info Card -->
+                <div
+                    style="
+                        background: white;
+                        padding: 2rem;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                        color: black;
+                    "
+                >
+                    <h2 style="color: #2c5530; margin-bottom: 1rem">
+                        📍 Visit Us
+                    </h2>
+                    <p>
+                        <strong>Address:</strong>
+                        <br />
+                        1, Adeniran Oyinlola Avenue, Opposite Anfani Roundabout,
+                        <br />
+                        Ring Road, Challenge Area, P.M.B. 5168, Dugbe, Ibadan.
+                        <br />
+                        Oyo State, Nigeria.
+                    </p>
+                    <p>
+                        <strong>Phone:</strong>
+                        <a href="tel:+234705778489">0705778489</a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:info@ibadanchamber.org.ng"
+                            >info@ibadanchamber.org.ng</a
+                        >
+                    </p>
+                </div>
+
+                <!-- Membership Info -->
+                <div
+                    style="
+                        background: white;
+                        padding: 2rem;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                        color: black;
+                    "
+                >
+                    <h2 style="color: #2c5530; margin-bottom: 1rem">
+                        🏆 Membership Levels
+                    </h2>
+                    <div style="margin-bottom: 1rem">
+                        <span
+                            style="
+                                background: #ffd700;
+                                color: #333;
+                                padding: 0.25rem 0.75rem;
+                                border-radius: 15px;
+                                font-weight: bold;
+                                margin-right: 0.5rem;
+                            "
+                            >Gold</span
+                        >
+                        Premium benefits
+                    </div>
+                    <div style="margin-bottom: 1rem">
+                        <span
+                            style="
+                                background: #c0c0c0;
+                                color: #333;
+                                padding: 0.25rem 0.75rem;
+                                border-radius: 15px;
+                                font-weight: bold;
+                                margin-right: 0.5rem;
+                            "
+                            >Silver</span
+                        >
+                        Enhanced services
+                    </div>
+                    <div>
+                        <span
+                            style="
+                                background: #cd7f32;
+                                color: white;
+                                padding: 0.25rem 0.75rem;
+                                border-radius: 15px;
+                                font-weight: bold;
+                                margin-right: 0.5rem;
+                            "
+                            >Member</span
+                        >
+                        Basic membership
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div
+                    style="
+                        background: white;
+                        padding: 2rem;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    "
+                >
+                    <h2 style="color: #2c5530; margin-bottom: 1rem">
+                        📊 Our Impact
+                    </h2>
+                    <div
+                        style="
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 1rem;
+                            text-align: center;
+                        "
+                    >
+                        <div>
+                            <div
+                                style="
+                                    font-size: 2rem;
+                                    font-weight: bold;
+                                    color: #4a7c59;
+                                "
+                            >
+                                10+
+                            </div>
+                            <div style="font-size: 0.9rem; color: #666">
+                                Active Members
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                style="
+                                    font-size: 2rem;
+                                    font-weight: bold;
+                                    color: #4a7c59;
+                                "
+                            >
+                                25+
+                            </div>
+                            <div style="font-size: 0.9rem; color: #666">
+                                Years Serving
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                style="
+                                    font-size: 2rem;
+                                    font-weight: bold;
+                                    color: #4a7c59;
+                                "
+                            >
+                                100+
+                            </div>
+                            <div style="font-size: 0.9rem; color: #666">
+                                Events Hosted
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                style="
+                                    font-size: 2rem;
+                                    font-weight: bold;
+                                    color: #4a7c59;
+                                "
+                            >
+                                $2M+
+                            </div>
+                            <div style="font-size: 0.9rem; color: #666">
+                                Economic Impact
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div
+                style="
+                    background: #f8f9fa;
+                    padding: 3rem 2rem;
+                    text-align: center;
+                    border-radius: 8px;
+                    margin-bottom: 2rem;
+                    color: black;
+                "
+            >
+                <h2 style="color: #2c5530; margin-bottom: 1rem">
+                    Ready to Grow Your Business?
+                </h2>
+                <p
+                    style="
+                        font-size: 1.1rem;
+                        margin-bottom: 2rem;
+                        max-width: 600px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    "
+                >
+                    Join the Ibadan Chamber of Commerce and connect with fellow
+                    entrepreneurs, access valuable resources, and contribute to
+                    our thriving business community.
+                </p>
+                <a
+                    href="directory.html"
+                    style="
+                        background: #2c5530;
+                        color: white;
+                        padding: 1rem 2rem;
+                        text-decoration: none;
+                        border-radius: 6px;
+                        font-weight: bold;
+                        display: inline-block;
+                        margin-right: 1rem;
+                    "
+                >
+                    🔍 Explore Businesses
+                </a>
+                <!-- join.html coming up-->
+                <a
+                    href="#"
+                    style="
+                        background: #4a7c59;
+                        color: white;
+                        padding: 1rem 2rem;
+                        text-decoration: none;
+                        border-radius: 6px;
+                        font-weight: bold;
+                        display: inline-block;
+                    "
+                >
+                    🚀 Become a Member
+                </a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Contact Information</h3>
+                        <p><strong>Ibadan Chamber of Commerce</strong></p>
+                        <p>
+                            1, Adeniran Oyinlola Avenue, Opposite Anfani
+                            <br />
+                            Roundabout, Off Ring Road, Challenge Area, P.M.B.
+                            <br />
+                            5168, Dugbe, Ibadan. Oyo State, Nigeria.
+                        </p>
+                        <p>
+                            Phone:
+                            <a href="tel:+234705778489">0705778489</a>
+                        </p>
+                        <p>
+                            Email:
+                            <a href="mailto:info@ibadanchamber.org.ng"
+                                >info@ibadanchamber.org.ng</a
+                            >
+                        </p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="directory.html">Business Directory</a></p>
+                        <p><a href="#">Join the Chamber</a></p>
+                        <!--join.html: To be done later-->
+                        <p><a href="discover.html">Discover Ibadan</a></p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="YouTube"
+                            >
+                                📺
+                            </a>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Twitter"
+                            >
+                                <img
+                                    src="images/twitter-svgrepo-com.svg"
+                                    width="20"
+                                    height="20"
+                                    alt="twitter logo"
+                                />
+                            </a>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="LinkedIn"
+                            >
+                                <img
+                                    src="./images/linkedin-svgrepo-com.svg"
+                                    width="20"
+                                    height="20"
+                                    alt="linkedin logo"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="development-info">
+                            <p><strong>WDD231 Class Project</strong></p>
+                            <p>Emeka MacDonald Umeh</p>
+                            <p>
+                                &copy;
+                                <span id="copyright-year">2025</span> Ibadan
+                                Chamber of Commerce
+                            </p>
+                            <p>
+                                Last Modified: <span id="last-modified"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="./scripts/directory.js"></script>
+    </body>
+</html>
