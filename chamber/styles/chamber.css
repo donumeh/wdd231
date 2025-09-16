@@ -45,7 +45,6 @@ select {
     --accent-color: #8fbc8f;
     --background-color: #f8f9fa;
     --text-color: #333;
-    --header-text-color: black;
     --light-gray: #e9ecef;
     --gold: #ffd700;
     --silver: #c0c0c0;
@@ -105,7 +104,7 @@ nav {
 
 .nav-menu a {
     text-decoration: none;
-    color: var(--header-text-color);
+    color: black;
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -174,7 +173,7 @@ main {
     align-items: center;
     margin-bottom: 2rem;
     padding: 1rem;
-    background-color: var(--white);
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -196,12 +195,12 @@ main {
 
 .toggle-btn.active {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: white;
 }
 
 .toggle-btn:hover {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: white;
 }
 
 /* Directory Container */
@@ -218,7 +217,7 @@ main {
 }
 
 .member-card {
-    background-color: var(--white);
+    background-color: white;
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -242,7 +241,7 @@ main {
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: bold;
-    color: var(--white);
+    color: white;
 }
 
 .member-card .membership-badge.gold {
@@ -257,7 +256,7 @@ main {
 
 .member-card .membership-badge.member {
     background-color: var(--bronze);
-    color: var(--white);
+    color: white;
 }
 
 .member-card .business-image {
@@ -319,7 +318,7 @@ main {
 
 .service-tag {
     background-color: var(--accent-color);
-    color: var(--white);
+    color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 12px;
     font-size: 0.8rem;
@@ -341,7 +340,7 @@ main {
 }
 
 .member-list-item {
-    background-color: var(--white);
+    background-color: white;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -431,7 +430,7 @@ footer {
 }
 
 .footer-section a {
-    color: var(--white);
+    color: white;
     text-decoration: none;
 }
 
