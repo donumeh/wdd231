@@ -1,0 +1,222 @@
+/* Typography - Imported Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap");
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Schema Variables */
+:root {
+    --primary-green: #2e7d32; /* Forest Green for headers and primary elements */
+    --accent-orange: #ff6f00; /* Electric Orange for accents and highlights */
+    --light-gray: #f5f5f5; /* Background color */
+    --dark-gray: #424242; /* Text color */
+    --white: #ffffff; /* Clean backgrounds */
+    --light-green: #a5d6a7; /* Subtle green highlights */
+}
+
+/* Base Styles */
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: var(--light-gray);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typography Implementation */
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: var(--primary-green);
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    color: var(--primary-green);
+    margin: 30px 0 15px 0;
+    border-bottom: 3px solid var(--accent-orange);
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: var(--accent-orange);
+    margin: 20px 0 10px 0;
+}
+
+p,
+li {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* Layout Sections */
+.header {
+    background: linear-gradient(
+        135deg,
+        var(--primary-green),
+        var(--light-green)
+    );
+    color: var(--white);
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section {
+    background: var(--white);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--primary-green);
+}
+
+/* Color Schema Display */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.color-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.color-primary {
+    background-color: var(--primary-green);
+}
+.color-accent {
+    background-color: var(--accent-orange);
+}
+.color-light {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+.color-dark {
+    background-color: var(--dark-gray);
+}
+
+/* Typography Examples */
+.typography-example {
+    background: var(--light-gray);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border-left: 4px solid var(--accent-orange);
+}
+
+/* Wireframe Styles */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.wireframe {
+    background: var(--white);
+    border: 2px solid var(--primary-green);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.wireframe-box {
+    background: var(--light-gray);
+    border: 1px solid var(--dark-gray);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--dark-gray);
+}
+
+.wireframe-header {
+    background: var(--primary-green);
+    color: var(--white);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.wireframe-nav {
+    background: var(--accent-orange);
+    color: var(--white);
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.wireframe-content {
+    background: var(--light-green);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.wireframe-footer {
+    background: var(--dark-gray);
+    color: var(--white);
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wireframe-container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    body {
+        padding: 15px;
+    }
+}
+
+/* Accent Elements */
+.highlight {
+    background: var(--light-green);
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid var(--accent-orange);
+    margin: 15px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: var(--primary-green);
+    font-weight: 600;
+}
