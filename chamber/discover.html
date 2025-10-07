@@ -152,6 +152,35 @@
                     <!-- Attraction cards will be dynamically loaded here -->
                 </div>
             </div>
+
+            <!-- Attraction Details Modal -->
+            <dialog id="attractionModal" class="attraction-modal">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Attraction Details</h2>
+                    <button
+                        id="closeModal"
+                        class="close-btn"
+                        aria-label="Close modal"
+                    >
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <figure id="modalImage">
+                        <img src="" alt="" />
+                    </figure>
+                    <div class="modal-content">
+                        <address id="modalAddress"></address>
+                        <p id="modalDescription"></p>
+                        <div id="modalExtraInfo"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="modalCloseBtn" class="btn-primary">
+                        Close
+                    </button>
+                </div>
+            </dialog>
         </main>
 
         <!-- Footer -->

@@ -239,27 +239,161 @@ function learnMore(attractionName) {
   const attraction = attractions.find((a) => a.name === attractionName);
 
   if (attraction) {
-    // Create and show detailed modal (future enhancement)
-    showAttractionDetails(attraction);
+    showAttractionModal(attraction);
   } else {
-    // Fallback alert
-    alert(
-      `Thank you for your interest in ${attractionName}! More detailed information coming soon.`,
-    );
+    console.error("Attraction not found:", attractionName);
   }
 
   // Analytics tracking
+  console.log(`User clicked Learn More for: ${attractionName}`);
 }
 
 /**
- * Show detailed information for an attraction (future modal implementation)
+ * Show detailed information for an attraction in modal
  * @param {Object} attraction - Attraction data object
  */
-function showAttractionDetails(attraction) {
-  // Future implementation: Create and show modal with detailed information
-  // For now, show alert with basic info
-  const message = `${attraction.name}\n\nLocation: ${attraction.address}\n\nDescription: ${attraction.description}`;
-  alert(message);
+function showAttractionModal(attraction) {
+  const modal = document.getElementById("attractionModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalImage = modal.querySelector("#modalImage img");
+  const modalAddress = document.getElementById("modalAddress");
+  const modalDescription = document.getElementById("modalDescription");
+  const modalExtraInfo = document.getElementById("modalExtraInfo");
+
+  if (!modal) {
+    console.error("Modal element not found");
+    return;
+  }
+
+  // Populate modal content
+  modalTitle.textContent = attraction.name;
+
+  // Set image with fallback
+  const placeholderUrl = `https://via.placeholder.com/600x250/2c5530/ffffff?text=${encodeURIComponent(attraction.name)}`;
+  modalImage.src = placeholderUrl;
+  modalImage.alt = attraction.imageAlt || attraction.name;
+  modalImage.onerror = function () {
+    this.src = placeholderUrl;
+  };
+
+  modalAddress.textContent = attraction.address;
+  modalDescription.textContent = attraction.description;
+
+  // Add extra information based on attraction type
+  modalExtraInfo.innerHTML = generateExtraInfo(attraction);
+
+  // Show the modal
+  modal.showModal();
+
+  // Focus management for accessibility
+  const closeBtn = document.getElementById("closeModal");
+  if (closeBtn) {
+    closeBtn.focus();
+  }
+  setupModalFunctionality();
+}
+
+/**
+ * Generate additional information for attractions
+ * @param {Object} attraction - Attraction data object
+ * @returns {string} HTML content for extra info
+ */
+function generateExtraInfo(attraction) {
+  const infoMap = {
+    "University of Ibadan": {
+      title: "Quick Facts",
+      items: [
+        "Established in 1948",
+        "First university in Nigeria",
+        "Famous Trenchard Hall",
+        "Largest university library in Africa",
+        "Beautiful botanical gardens",
+      ],
+    },
+    "Cocoa House": {
+      title: "Building Features",
+      items: [
+        "26 floors tall",
+        "First skyscraper in tropical Africa",
+        "Built from cocoa export revenues",
+        "Iconic Ibadan landmark",
+        "Panoramic city views",
+      ],
+    },
+    "Mapo Hall": {
+      title: "Historical Significance",
+      items: [
+        "Built in 1929",
+        "Colonial administrative center",
+        "360-degree city views",
+        "Cultural heritage site",
+        "Traditional ceremonies venue",
+      ],
+    },
+    "Agodi Gardens": {
+      title: "Facilities & Activities",
+      items: [
+        "Beautiful botanical gardens",
+        "Recreational lake",
+        "Children's playground",
+        "Wildlife viewing",
+        "Perfect for family picnics",
+      ],
+    },
+    "National Museum Ibadan": {
+      title: "Collections & Exhibits",
+      items: [
+        "Traditional Nigerian artifacts",
+        "Archaeological findings",
+        "Cultural heritage displays",
+        "Ancient kingdoms exhibits",
+        "Traditional crafts showcase",
+      ],
+    },
+    "Trans Wonderland Amusement Park": {
+      title: "Attractions & Rides",
+      items: [
+        "Thrilling roller coasters",
+        "Water slides and pools",
+        "Family-friendly rides",
+        "Adventure activities",
+        "Food courts and restaurants",
+      ],
+    },
+    "Bower Memorial Tower": {
+      title: "Tower Information",
+      items: [
+        "60 feet tall",
+        "Built in 1936",
+        "Memorial to Captain Bower",
+        "Spectacular city views",
+        "Historical landmark",
+      ],
+    },
+    "Ibadan Golf Club": {
+      title: "Golf Course Details",
+      items: [
+        "Established in 1932",
+        "18-hole championship course",
+        "Beautiful landscaping",
+        "Professional tournaments",
+        "Business networking venue",
+      ],
+    },
+  };
+
+  const info = infoMap[attraction.name];
+  if (!info) {
+    return "<h3>Additional Information</h3><p>More details coming soon!</p>";
+  }
+
+  const itemsList = info.items
+    .map((item) => `<li>${escapeHtml(item)}</li>`)
+    .join("");
+  return `
+        <h3>${escapeHtml(info.title)}</h3>
+        <ul>${itemsList}</ul>
+    `;
 }
 
 /**
@@ -393,6 +527,77 @@ function setupNavigation() {
       }
     });
   }
+
+  // Setup modal functionality
+  setupModalFunctionality();
+}
+
+/**
+ * Setup modal event listeners
+ */
+function setupModalFunctionality() {
+  const modal = document.getElementById("attractionModal");
+  const closeBtn = document.getElementById("closeModal");
+  const modalCloseBtn = document.getElementById("modalCloseBtn");
+
+  if (!modal) return;
+
+  // Close modal function
+  function closeModal() {
+    modal.close();
+  }
+
+  // Close button event listeners
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeModal);
+  }
+
+  if (modalCloseBtn) {
+    modalCloseBtn.addEventListener("click", closeModal);
+  }
+
+  // Close on backdrop click
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Close on Escape key
+  modal.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeModal();
+    }
+  });
+
+  // Trap focus within modal when open
+  modal.addEventListener("keydown", function (e) {
+    if (e.key === "Tab") {
+      trapFocusInModal(e, modal);
+    }
+  });
+}
+
+/**
+ * Trap focus within modal for accessibility
+ * @param {KeyboardEvent} e - The keyboard event
+ * @param {HTMLElement} modal - The modal element
+ */
+function trapFocusInModal(e, modal) {
+  const focusableElements = modal.querySelectorAll(
+    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+  );
+
+  const firstElement = focusableElements[0];
+  const lastElement = focusableElements[focusableElements.length - 1];
+
+  if (e.shiftKey && document.activeElement === firstElement) {
+    e.preventDefault();
+    lastElement.focus();
+  } else if (!e.shiftKey && document.activeElement === lastElement) {
+    e.preventDefault();
+    firstElement.focus();
+  }
 }
 
 /**
@@ -459,6 +664,14 @@ function setupAccessibility() {
   if (gridDiv) {
     gridDiv.setAttribute("aria-live", "polite");
     gridDiv.setAttribute("aria-label", "Ibadan attractions gallery");
+  }
+
+  // Modal accessibility attributes
+  const modal = document.getElementById("attractionModal");
+  if (modal) {
+    modal.setAttribute("aria-modal", "true");
+    modal.setAttribute("role", "dialog");
+    modal.setAttribute("aria-labelledby", "modalTitle");
   }
 }
 
