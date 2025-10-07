@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "University of Ibadan",
+    "address": "University Road, Ibadan, Oyo State, Nigeria",
+    "description": "Nigeria's premier university, established in 1948. The University of Ibadan is renowned for its academic excellence, beautiful campus, and rich history. It's home to the famous Trenchard Hall and houses one of Africa's largest university libraries.",
+    "image": "ui.jpg",
+    "imageAlt": "University of Ibadan main entrance gate with lush greenery"
+  },
+  {
+    "id": 2,
+    "name": "Cocoa House",
+    "address": "Dugbe, Ibadan, Oyo State, Nigeria",
+    "description": "A 26-storey skyscraper and iconic landmark of Ibadan, built in 1965. Known as the first skyscraper in tropical Africa, it was funded by cocoa export revenues and symbolizes the economic prosperity of the Western Region.",
+    "image": "cocoa-house.jpg",
+    "imageAlt": "Cocoa House towering over Ibadan skyline"
+  },
+  {
+    "id": 3,
+    "name": "Mapo Hall",
+    "address": "Mapo Hill, Ibadan, Oyo State, Nigeria",
+    "description": "Historic town hall built in 1929, serving as the seat of the Ibadan Native Authority. This colonial-era building offers panoramic views of Ibadan and is a symbol of the city's administrative heritage and cultural significance.",
+    "image": "mapo-hall.jpg",
+    "imageAlt": "Historic Mapo Hall building on the hill overlooking Ibadan"
+  },
+  {
+    "id": 4,
+    "name": "Agodi Gardens",
+    "address": "Agodi GRA, Ibadan, Oyo State, Nigeria",
+    "description": "A beautiful recreational park and zoo featuring lush gardens, a lake, children's playground, and various wildlife. Perfect for family outings, picnics, and nature lovers seeking tranquility within the bustling city.",
+    "image": "agodi-gardens.jpg",
+    "imageAlt": "Serene lake and gardens at Agodi Gardens with families enjoying recreational activities"
+  },
+  {
+    "id": 5,
+    "name": "National Museum Ibadan",
+    "address": "PMB 5116, University of Ibadan, Ibadan, Oyo State, Nigeria",
+    "description": "Houses an extensive collection of Nigerian artifacts, traditional art, and archaeological findings. The museum showcases the rich cultural heritage of Nigeria with exhibits on traditional crafts, ancient kingdoms, and historical artifacts.",
+    "image": "museum-ibadan.jpg",
+    "imageAlt": "Traditional Nigerian artifacts and sculptures displayed at National Museum Ibadan"
+  },
+  {
+    "id": 6,
+    "name": "Trans Wonderland Amusement Park",
+    "address": "Liberty Road, Challenge, Ibadan, Oyo State, Nigeria",
+    "description": "Nigeria's premier amusement park featuring thrilling rides, water attractions, and family entertainment. With roller coasters, water slides, and various recreational facilities, it's a perfect destination for adventure and fun.",
+    "image": "trans.jpg",
+    "imageAlt": "Colorful roller coaster and water slides at Trans Wonderland Amusement Park"
+  },
+  {
+    "id": 7,
+    "name": "Bower Memorial Tower",
+    "address": "Oke Are, Ibadan, Oyo State, Nigeria",
+    "description": "A 60-foot tall tower built in 1936 to commemorate Captain Robert Lister Bower, the first British Resident of Ibadan. The tower offers spectacular 360-degree views of the ancient city and surrounding hills.",
+    "image": "bower-tower.jpg",
+    "imageAlt": "Bower Memorial Tower standing tall against blue sky with city views"
+  },
+  {
+    "id": 8,
+    "name": "Ibadan Golf Club",
+    "address": "Jericho GRA, Ibadan, Oyo State, Nigeria",
+    "description": "Established in 1932, one of Nigeria's oldest golf clubs featuring an 18-hole championship course. Set in beautiful surroundings with mature trees and well-maintained greens, it's a haven for golf enthusiasts and business networking.",
+    "image": "ibadan-golf.jpg",
+    "imageAlt": "Well-maintained golf course with lush green fairways at Ibadan Golf Club"
+  }
+]

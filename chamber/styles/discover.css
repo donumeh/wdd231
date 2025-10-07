@@ -1,0 +1,330 @@
+/* Discover Page Specific Styles */
+.discover-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Visitor Message */
+.visitor-message {
+    background: linear-gradient(135deg, var(--accent-color), #90ee90);
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-message {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0;
+    line-height: 1;
+}
+
+.close-message:hover {
+    color: #1a3e1d;
+}
+
+/* Grid Layout for Attractions */
+.attractions-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Small screens (320px to 640px) */
+@media (max-width: 640px) {
+    .attractions-grid {
+        grid-template-areas:
+            "attraction1"
+            "attraction2"
+            "attraction3"
+            "attraction4"
+            "attraction5"
+            "attraction6"
+            "attraction7"
+            "attraction8";
+    }
+}
+
+/* Medium screens (641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .attractions-grid {
+        grid-template-areas:
+            "attraction1 attraction2"
+            "attraction3 attraction4"
+            "attraction5 attraction6"
+            "attraction7 attraction8";
+    }
+}
+
+/* Large screens (1025px and above) */
+@media (min-width: 1025px) {
+    .attractions-grid {
+        grid-template-areas:
+            "attraction1 attraction2 attraction3"
+            "attraction4 attraction5 attraction6"
+            "attraction7 attraction8 .";
+    }
+}
+
+/* Attraction Card Styles */
+.attraction-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Grid area assignments */
+.attraction-card:nth-child(1) {
+    grid-area: attraction1;
+}
+.attraction-card:nth-child(2) {
+    grid-area: attraction2;
+}
+.attraction-card:nth-child(3) {
+    grid-area: attraction3;
+}
+.attraction-card:nth-child(4) {
+    grid-area: attraction4;
+}
+.attraction-card:nth-child(5) {
+    grid-area: attraction5;
+}
+.attraction-card:nth-child(6) {
+    grid-area: attraction6;
+}
+.attraction-card:nth-child(7) {
+    grid-area: attraction7;
+}
+.attraction-card:nth-child(8) {
+    grid-area: attraction8;
+}
+
+.attraction-card h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 1.5rem 1.5rem 1rem 1.5rem;
+    line-height: 1.3;
+}
+
+.attraction-card figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+/* Image effects for non-mobile screens */
+@media (min-width: 641px) {
+    .attraction-card:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.1) saturate(1.2);
+    }
+}
+
+.attraction-card address {
+    font-style: normal;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin: 1rem 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.attraction-card p {
+    margin: 1rem 1.5rem;
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.attraction-card button {
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 1rem 1.5rem 1.5rem 1.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.attraction-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 85, 48, 0.3);
+    background: linear-gradient(
+        135deg,
+        var(--secondary-color),
+        var(--primary-color)
+    );
+}
+
+/* Loading Animation */
+.loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--secondary-color);
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Error Message */
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border-left: 4px solid #dc3545;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    .attractions-grid {
+        gap: 1.5rem;
+    }
+
+    .attraction-card {
+        margin: 0 0.5rem;
+    }
+}
+
+/* Image placeholder styles */
+.attraction-card img[data-placeholder] {
+    background:
+        linear-gradient(45deg, #f8f9fa 25%, transparent 25%),
+        linear-gradient(-45deg, #f8f9fa 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #f8f9fa 75%),
+        linear-gradient(-45deg, transparent 75%, #f8f9fa 75%);
+    background-size: 20px 20px;
+    background-position:
+        0 0,
+        0 10px,
+        10px -10px,
+        -10px 0px;
+    background-color: #e9ecef;
+    position: relative;
+}
+
+.attraction-card img[data-placeholder]:before {
+    content: "Image Loading...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(44, 85, 48, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    .attraction-card,
+    .attraction-card img,
+    .visitor-message {
+        animation: none;
+        transition: none;
+    }
+
+    .attraction-card:hover {
+        transform: none;
+    }
+
+    .attraction-card:hover img {
+        transform: none;
+    }
+}
