@@ -33,7 +33,7 @@
         <nav class="navigation" role="navigation" aria-label="Main navigation">
             <ul>
                 <li><a href="#" class="active" aria-current="page">Home</a></li>
-                <li><a href="#">Chamber Project</a></li>
+                <li><a href="./chamber/index.html">Chamber Project</a></li>
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
@@ -95,6 +95,13 @@
                     aria-live="polite"
                     aria-label="Course list"
                 ></div>
+
+                <dialog id="course-details">
+                    <button id="course-details-close">❌</button>
+                    <h2 id="course-heading"></h2>
+                    <p id="course-description"></p>
+                </dialog>
+
                 <p>
                     The total credits for course listed above is
                     <span id="totalCredits" aria-label="Total credits">0</span>

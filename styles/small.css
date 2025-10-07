@@ -201,6 +201,7 @@ main h1 {
     grid-template-columns: 1fr;
     gap: 1rem;
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 
 .course {
@@ -210,6 +211,27 @@ main h1 {
     padding: 1.5rem;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#course-details {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+::backdrop {
+    background-color: rgba(0 0 0 / 0.5);
+}
+
+#course-details-close {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 0.5rem 1 rem;
+    border: 1px solid rgb(0 0 0 / 10%);
 }
 
 .course:hover {

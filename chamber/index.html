@@ -73,8 +73,7 @@
                         <!--To review later-->
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="directory.html">Directory</a></li>
-                        <li><a href="#">Join</a></li>
-                        <!--join.html To be done soon-->
+                        <li><a href="join.html">Join</a></li>
                         <li><a href="discover.html">Discover</a></li>
                     </ul>
 
@@ -264,11 +263,25 @@
                     </div>
                 </div>
 
-                <!-- Quick Stats -->
                 <div
                     style="
                         background: white;
                         padding: 2rem;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    "
+                >
+                    <h2 style="color: #2c5530; margin-bottom: 1rem">
+                        🌦️ Weather
+                    </h2>
+                    <div id="current_weather"></div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div
+                    style="
+                        background: white;
+                        padding: 2rem;x
                         border-radius: 8px;
                         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
                     "
@@ -457,7 +470,7 @@
                                 aria-label="Twitter"
                             >
                                 <img
-                                    src="images/twitter-svgrepo-com.svg"
+                                    src="images/twitter_svgrepo_com.svg"
                                     width="20"
                                     height="20"
                                     alt="twitter logo"
@@ -470,7 +483,7 @@
                                 aria-label="LinkedIn"
                             >
                                 <img
-                                    src="./images/linkedin-svgrepo-com.svg"
+                                    src="./images/linkedin_svgrepo_com.svg"
                                     width="20"
                                     height="20"
                                     alt="linkedin logo"
@@ -497,5 +510,6 @@
 
         <!-- JavaScript -->
         <script src="./scripts/directory.js"></script>
+        <script src="./scripts/weather.js"></script>
     </body>
 </html>

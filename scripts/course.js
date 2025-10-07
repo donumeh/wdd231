@@ -70,6 +70,13 @@ const courses = [
 const courseList = document.getElementById("courseList");
 const totalCredits = document.getElementById("totalCredits");
 
+const course_details = document.querySelector("#course-details");
+const course_detail_close_button = document.querySelector(
+  "#course-details-close",
+);
+const course_details_heading = document.querySelector("#course-details h2");
+const course_details_paragraph = document.querySelector("#course-details p");
+
 function displayCourses(coursesToDisplay) {
   if (!courseList || !totalCredits) {
     console.error("Required DOM elements not found");
@@ -99,6 +106,31 @@ function displayCourses(coursesToDisplay) {
             <p>${course.title}</p>
             <p class="credits">${course.credits} Credits</p>
         `;
+
+    // adding modal to each course
+    courseCard.addEventListener("click", (e) => {
+      course_details.showModal();
+      courses.map((course) => {
+        if (
+          e.target.children[0] !== undefined &&
+          `${course.subject} ${course.number}` ==
+            e.target.children[0].textContent
+        ) {
+          course_details_heading.textContent = course.title;
+          course_details_paragraph.innerHTML = `
+          <p><strong>Credits</strong>: ${course.credits}</p>
+          <p><strong>Certificate</strong>: ${course.certificate}</p>
+          <p>${course.description}</p>
+          <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>`;
+        }
+      });
+    });
+
+    course_detail_close_button.addEventListener("click", () => {
+      course_details.close();
+      course_details_heading.textContent = "";
+      course_details_paragraph.textContent = "";
+    });
 
     courseList.appendChild(courseCard);
     creditTotal += course.credits;

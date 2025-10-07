@@ -166,6 +166,17 @@ main {
     font-weight: 700;
 }
 
+.weather-label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
 /* Directory Controls */
 .directory-controls {
     display: flex;

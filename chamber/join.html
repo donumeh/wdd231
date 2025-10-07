@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Join the Chamber - Ibadan Chamber of Commerce</title>
+        <meta
+            name="description"
+            content="Join the Ibadan Chamber of Commerce and become part of our thriving business community. Choose from our membership levels and grow your business."
+        />
+        <meta name="author" content="Emeka MacDonald Umeh" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+
+        <!-- Facebook Open Graph Meta Tags -->
+        <meta
+            property="og:title"
+            content="Join the Chamber - Ibadan Chamber of Commerce"
+        />
+        <meta
+            property="og:description"
+            content="Join the Ibadan Chamber of Commerce and become part of our thriving business community. Choose from our membership levels and grow your business."
+        />
+        <meta
+            property="og:image"
+            content="https://donumeh.github.io/wdd231/chamber/images/logo.png"
+        />
+        <meta
+            property="og:url"
+            content="https://donumeh.github.io/wdd231/chamber/join.html"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Ibadan Chamber of Commerce" />
+
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="./styles/chamber.css" />
+        <link rel="stylesheet" href="./styles/join.css" />
+
+        <!-- Schema.org JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Ibadan Chamber of Commerce",
+                "description": "The Ibadan Chamber of Commerce serves as a resource hub for businesses in the city of Ibadan, promoting local economic growth and fostering community connections.",
+                "url": "https://donumeh.github.io/wdd231/chamber/",
+                "logo": "https://donumeh.github.io/wdd231/chamber/images/logo.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1, Adeniran Oyinlola Avenue, Opposite Anfani Roundabout",
+                    "addressLocality": "Off Ring Road, Challenge Area, P.M.B. 5168, Dugbe, Ibadan",
+                    "addressCountry": "Nigeria",
+                    "postalCode": "2000253"
+                },
+                "telephone": "+243705778489, +2348143908143, +2348137303095",
+                "email": "info@ibadanchamber.org.ng"
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img
+                        src="./images/logo.png"
+                        alt="Ibadan Chamber of Commerce Logo"
+                        width="50"
+                        height="50"
+                    />
+                    <h1>Ibadan Chamber of Commerce</h1>
+                </a>
+
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html" class="active">Join</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                    </ul>
+
+                    <button
+                        class="hamburger"
+                        aria-label="Toggle navigation menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        🌙
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="join-container">
+                <!-- Application Form Section -->
+                <section class="form-section">
+                    <h2>Join the Chamber</h2>
+                    <form
+                        method="get"
+                        action="thankyou.html"
+                        id="membershipForm"
+                    >
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label
+                                    for="first_name"
+                                    title="Enter your first name"
+                                    >First Name *</label
+                                >
+                                <input
+                                    type="text"
+                                    id="first_name"
+                                    name="first_name"
+                                    title="Enter your first name"
+                                    autocomplete="given-name"
+                                    required
+                                    placeholder="John"
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label
+                                    for="last_name"
+                                    title="Enter your last name"
+                                    >Last Name *</label
+                                >
+                                <input
+                                    type="text"
+                                    id="last_name"
+                                    name="last_name"
+                                    title="Enter your last name"
+                                    autocomplete="family-name"
+                                    required
+                                    placeholder="Doe"
+                                />
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label
+                                    for="org_title"
+                                    title="Enter your title within your organization"
+                                    >Organization Title</label
+                                >
+                                <input
+                                    type="text"
+                                    id="org_title"
+                                    name="org_title"
+                                    title="Enter your title within your organization (minimum 7 characters)"
+                                    autocomplete="organization-title"
+                                    pattern="[A-Za-z\s\-]{7,}"
+                                    placeholder="Chief Executive Officer"
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label
+                                    for="email"
+                                    title="Enter your email address"
+                                    >Email Address *</label
+                                >
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    title="Enter your email address"
+                                    autocomplete="email"
+                                    required
+                                    placeholder="john.doe@example.com"
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label
+                                    for="mobile"
+                                    title="Enter your mobile phone number"
+                                    >Mobile Phone *</label
+                                >
+                                <input
+                                    type="tel"
+                                    id="mobile"
+                                    name="mobile"
+                                    title="Enter your mobile phone number"
+                                    autocomplete="tel"
+                                    required
+                                    placeholder="+234 805 123 4567"
+                                />
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label
+                                    for="business_name"
+                                    title="Enter your business or organization name"
+                                    >Business/Organization Name *</label
+                                >
+                                <input
+                                    type="text"
+                                    id="business_name"
+                                    name="business_name"
+                                    title="Enter your business or organization name"
+                                    autocomplete="organization"
+                                    required
+                                    placeholder="ABC Company Ltd"
+                                />
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label
+                                    for="membership_level"
+                                    title="Select your membership level"
+                                    >Membership Level</label
+                                >
+                                <select
+                                    id="membership_level"
+                                    name="membership_level"
+                                    title="Select your preferred membership level"
+                                >
+                                    <option value="">
+                                        Select Membership Level
+                                    </option>
+                                    <option value="np">
+                                        NP Membership (Non-Profit - Free)
+                                    </option>
+                                    <option value="bronze">
+                                        Bronze Membership
+                                    </option>
+                                    <option value="silver">
+                                        Silver Membership
+                                    </option>
+                                    <option value="gold">
+                                        Gold Membership
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label
+                                    for="business_description"
+                                    title="Describe your business or organization"
+                                    >Business/Organization Description</label
+                                >
+                                <textarea
+                                    id="business_description"
+                                    name="business_description"
+                                    title="Describe your business or organization"
+                                    rows="4"
+                                    placeholder="Provide a brief description of your business or organization..."
+                                ></textarea>
+                            </div>
+
+                            <input
+                                type="hidden"
+                                id="timestamp"
+                                name="timestamp"
+                            />
+
+                            <div class="form-group full-width">
+                                <button type="submit" class="submit-btn">
+                                    Submit Application
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Membership Information Section -->
+                <section class="membership-section">
+                    <h2>Membership Levels</h2>
+                    <div class="membership-cards">
+                        <div class="membership-card np">
+                            <h3>NP Membership</h3>
+                            <p>
+                                Perfect for non-profit organizations looking to
+                                connect with the business community.
+                            </p>
+                            <a
+                                href="#"
+                                class="learn-more-btn"
+                                data-modal="npModal"
+                                >Learn More</a
+                            >
+                        </div>
+
+                        <div class="membership-card bronze">
+                            <h3>Bronze Membership</h3>
+                            <p>
+                                Great starting point for small businesses and
+                                entrepreneurs entering the chamber.
+                            </p>
+                            <a
+                                href="#"
+                                class="learn-more-btn"
+                                data-modal="bronzeModal"
+                                >Learn More</a
+                            >
+                        </div>
+
+                        <div class="membership-card silver">
+                            <h3>Silver Membership</h3>
+                            <p>
+                                Enhanced benefits for growing businesses ready
+                                to expand their network.
+                            </p>
+                            <a
+                                href="#"
+                                class="learn-more-btn"
+                                data-modal="silverModal"
+                                >Learn More</a
+                            >
+                        </div>
+
+                        <div class="membership-card gold">
+                            <h3>Gold Membership</h3>
+                            <p>
+                                Premium membership with maximum benefits for
+                                established businesses.
+                            </p>
+                            <a
+                                href="#"
+                                class="learn-more-btn"
+                                data-modal="goldModal"
+                                >Learn More</a
+                            >
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Modals -->
+        <!-- NP Membership Modal -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>NP Membership</h3>
+                    <span class="close" data-modal="npModal">&times;</span>
+                </div>
+                <div class="price-tag">FREE for Non-Profit Organizations</div>
+                <h4>Benefits Include:</h4>
+                <ul class="benefits-list">
+                    <li>Access to networking events</li>
+                    <li>Chamber directory listing</li>
+                    <li>Monthly newsletter subscription</li>
+                    <li>Community event announcements</li>
+                    <li>Resource sharing opportunities</li>
+                    <li>Volunteer coordination support</li>
+                    <li>Non-profit collaboration forums</li>
+                </ul>
+                <p>
+                    <strong>Perfect for:</strong> Non-profit organizations,
+                    NGOs, community groups, and charitable organizations.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bronze Membership Modal -->
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Bronze Membership</h3>
+                    <span class="close" data-modal="bronzeModal">&times;</span>
+                </div>
+                <div class="price-tag">₦50,000 Annual Fee</div>
+                <h4>Benefits Include:</h4>
+                <ul class="benefits-list">
+                    <li>All NP Membership benefits</li>
+                    <li>Business training workshops</li>
+                    <li>Quarterly business socials</li>
+                    <li>Basic business counseling</li>
+                    <li>Member-to-member discounts</li>
+                    <li>Marketing opportunities</li>
+                    <li>Business referral network</li>
+                    <li>Economic development updates</li>
+                </ul>
+                <p>
+                    <strong>Perfect for:</strong> Small businesses, startups,
+                    and entrepreneurs looking to establish their presence.
+                </p>
+            </div>
+        </div>
+
+        <!-- Silver Membership Modal -->
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Silver Membership</h3>
+                    <span class="close" data-modal="silverModal">&times;</span>
+                </div>
+                <div class="price-tag">₦100,000 Annual Fee</div>
+                <h4>Benefits Include:</h4>
+                <ul class="benefits-list">
+                    <li>All Bronze Membership benefits</li>
+                    <li>Priority event registration</li>
+                    <li>Advanced business seminars</li>
+                    <li>Spotlight advertising (2 per year)</li>
+                    <li>Chamber advocacy representation</li>
+                    <li>Leadership development programs</li>
+                    <li>Government relations briefings</li>
+                    <li>Trade mission opportunities</li>
+                    <li>Enhanced online directory listing</li>
+                </ul>
+                <p>
+                    <strong>Perfect for:</strong> Growing businesses ready to
+                    expand their market reach and influence.
+                </p>
+            </div>
+        </div>
+
+        <!-- Gold Membership Modal -->
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Gold Membership</h3>
+                    <span class="close" data-modal="goldModal">&times;</span>
+                </div>
+                <div class="price-tag">₦200,000 Annual Fee</div>
+                <h4>Benefits Include:</h4>
+                <ul class="benefits-list">
+                    <li>All Silver Membership benefits</li>
+                    <li>Executive networking events</li>
+                    <li>Premium spotlight advertising (4 per year)</li>
+                    <li>Board meeting participation opportunities</li>
+                    <li>Exclusive business development seminars</li>
+                    <li>International trade connections</li>
+                    <li>Chamber leadership positions eligibility</li>
+                    <li>Priority media opportunities</li>
+                    <li>Custom business consulting sessions</li>
+                    <li>VIP event access and hosting privileges</li>
+                </ul>
+                <p>
+                    <strong>Perfect for:</strong> Established businesses and
+                    corporations seeking maximum visibility and influence.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Contact Information</h3>
+                        <p><strong>Ibadan Chamber of Commerce</strong></p>
+                        <p>
+                            1, Adeniran Oyinlola Avenue, Opposite Anfani
+                            <br />
+                            Roundabout, Off Ring Road, Challenge Area, P.M.B.
+                            <br />
+                            5168, Dugbe, Ibadan. Oyo State, Nigeria.
+                        </p>
+                        <p>
+                            Phone:
+                            <a href="tel:+234705778489">0705778489</a>
+                        </p>
+                        <p>
+                            Email:
+                            <a href="mailto:info@ibadanchamber.org.ng"
+                                >info@ibadanchamber.org.ng</a
+                            >
+                        </p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="directory.html">Business Directory</a></p>
+                        <p><a href="join.html">Join the Chamber</a></p>
+                        <p><a href="discover.html">Discover Ibadan</a></p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="YouTube"
+                            >
+                                📺
+                            </a>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Twitter"
+                            >
+                                <img
+                                    src="images/twitter_svgrepo_com.svg"
+                                    width="20"
+                                    height="20"
+                                    alt="twitter logo"
+                                />
+                            </a>
+                            <a
+                                href="#"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="LinkedIn"
+                            >
+                                <img
+                                    src="./images/linkedin_svgrepo_com.svg"
+                                    width="20"
+                                    height="20"
+                                    alt="linkedin logo"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="development-info">
+                            <p><strong>WDD231 Class Project</strong></p>
+                            <p>Emeka MacDonald Umeh</p>
+                            <p>
+                                &copy;
+                                <span id="copyright-year">2025</span> Ibadan
+                                Chamber of Commerce
+                            </p>
+                            <p>
+                                Last Modified: <span id="last-modified"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="./scripts/join.js"></script>
+        <script src="./scripts/directory.js"></script>
+    </body>
+</html>
