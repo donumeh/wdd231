@@ -1,6 +1,5 @@
 // Weather data gotten from OpenWeatherMap
 
-APPID = "9d9e4d452234fe5498fd7ff0fdbff1c7";
 CITY = "ibadan";
 BASE_URL = "http://api.openweathermap.org/data/2.5/";
 
