@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EcoRiders Club - Electric Bike Community</title>
+        <meta
+            name="description"
+            content="Join EcoRiders Club - the premier electric bike community for sustainable transportation, group rides, and eco-friendly adventures."
+        />
+        <meta name="author" content="Emeka MacDonald Umeh" />
+        <meta
+            property="og:title"
+            content="EcoRiders Club - Electric Bike Community"
+        />
+        <meta
+            property="og:description"
+            content="Join EcoRiders Club - the premier electric bike community for sustainable transportation, group rides, and eco-friendly adventures."
+        />
+        <meta property="og:image" content="images/ecoridersclub-og.jpg" />
+        <meta property="og:url" content="https://ecoridersclub.com" />
+        <meta property="og:type" content="website" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Navigation Header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <h1 class="logo-text">EcoRiders Club</h1>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <div class="mobile-menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu" id="nav-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="#rides" class="nav-link">Rides</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="resources.html" class="nav-link"
+                                >Resources</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="community.html" class="nav-link"
+                                >Community</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="join.html" class="nav-link">Join</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-cta">
+                        <a href="join.html" class="cta-button primary"
+                            >Join Us</a
+                        >
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">Join Our Electric Bike Community</h1>
+                <p class="hero-subtitle">
+                    Connect with fellow e-bike enthusiasts, discover scenic
+                    routes, and promote sustainable transportation together.
+                </p>
+                <div class="hero-actions">
+                    <a href="join.html" class="cta-button primary"
+                        >Join EcoRiders Today</a
+                    >
+                    <a href="#rides" class="cta-button secondary"
+                        >View Upcoming Rides</a
+                    >
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image">
+                    <span>Electric Bike Group Photo</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <!-- Featured Content Area -->
+                <div class="featured-section">
+                    <!-- Upcoming Rides -->
+                    <section class="upcoming-rides" id="rides">
+                        <h2>Upcoming Group Rides</h2>
+                        <div class="rides-grid">
+                            <div class="ride-card">
+                                <h3>Scenic River Trail</h3>
+                                <div class="ride-details">
+                                    <p class="ride-date">Saturday, March 25</p>
+                                    <p class="ride-difficulty">
+                                        Difficulty: Beginner
+                                    </p>
+                                    <p class="ride-distance">
+                                        Distance: 15 miles
+                                    </p>
+                                </div>
+                                <p class="ride-description">
+                                    Perfect ride for new members! Enjoy
+                                    beautiful river views with gentle terrain.
+                                </p>
+                                <button
+                                    class="join-ride-btn"
+                                    data-ride="scenic-river"
+                                >
+                                    Join This Ride
+                                </button>
+                            </div>
+
+                            <div class="ride-card">
+                                <h3>Mountain Challenge</h3>
+                                <div class="ride-details">
+                                    <p class="ride-date">Sunday, March 26</p>
+                                    <p class="ride-difficulty">
+                                        Difficulty: Advanced
+                                    </p>
+                                    <p class="ride-distance">
+                                        Distance: 35 miles
+                                    </p>
+                                </div>
+                                <p class="ride-description">
+                                    Challenging mountain trails for experienced
+                                    riders seeking adventure.
+                                </p>
+                                <button
+                                    class="join-ride-btn"
+                                    data-ride="mountain-challenge"
+                                >
+                                    Join This Ride
+                                </button>
+                            </div>
+
+                            <div class="ride-card">
+                                <h3>City Commuter Route</h3>
+                                <div class="ride-details">
+                                    <p class="ride-date">Wednesday, March 29</p>
+                                    <p class="ride-difficulty">
+                                        Difficulty: Intermediate
+                                    </p>
+                                    <p class="ride-distance">
+                                        Distance: 20 miles
+                                    </p>
+                                </div>
+                                <p class="ride-description">
+                                    Learn the best commuting routes while riding
+                                    with experienced city cyclists.
+                                </p>
+                                <button
+                                    class="join-ride-btn"
+                                    data-ride="city-commuter"
+                                >
+                                    Join This Ride
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Quick Links Section -->
+                    <section class="quick-links" id="resources">
+                        <h2>New to E-Bikes?</h2>
+                        <div class="links-grid">
+                            <div class="quick-link-card">
+                                <h3>New Member Guide</h3>
+                                <p>
+                                    Everything you need to know to get started
+                                    with our community.
+                                </p>
+                                <a href="#" class="link-btn">Get Started</a>
+                            </div>
+
+                            <div class="quick-link-card">
+                                <h3>Route Finder</h3>
+                                <p>
+                                    Discover bike-friendly routes and charging
+                                    stations in your area.
+                                </p>
+                                <a href="#" class="link-btn">Find Routes</a>
+                            </div>
+
+                            <div class="quick-link-card">
+                                <h3>Safety Guide</h3>
+                                <p>
+                                    Essential safety tips and local e-bike
+                                    regulations.
+                                </p>
+                                <a href="#" class="link-btn">Stay Safe</a>
+                            </div>
+
+                            <div class="quick-link-card">
+                                <h3>Maintenance Tips</h3>
+                                <p>
+                                    Keep your e-bike in perfect condition with
+                                    our expert guides.
+                                </p>
+                                <a href="#" class="link-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- News and Updates -->
+                    <section class="news-section">
+                        <h2>Latest News & Updates</h2>
+                        <div class="news-grid">
+                            <article class="news-card">
+                                <h3>New Partnership with Local Bike Shops</h3>
+                                <p class="news-date">March 15, 2024</p>
+                                <p>
+                                    We're excited to announce partnerships with
+                                    three local bike shops offering member
+                                    discounts on maintenance and accessories.
+                                </p>
+                                <a href="#" class="read-more">Read More</a>
+                            </article>
+
+                            <article class="news-card">
+                                <h3>Spring Riding Season Kickoff</h3>
+                                <p class="news-date">March 10, 2024</p>
+                                <p>
+                                    Join us for our annual spring kickoff event
+                                    featuring group rides, safety workshops, and
+                                    community barbecue.
+                                </p>
+                                <a href="#" class="read-more">Read More</a>
+                            </article>
+
+                            <article class="news-card">
+                                <h3>New Charging Stations Installed</h3>
+                                <p class="news-date">March 8, 2024</p>
+                                <p>
+                                    Five new e-bike charging stations have been
+                                    installed along our most popular routes
+                                    thanks to city partnership.
+                                </p>
+                                <a href="#" class="read-more">Read More</a>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar Content -->
+                <aside class="sidebar">
+                    <!-- Membership Form -->
+                    <div class="sidebar-card" id="membership">
+                        <h3>Join EcoRiders Club</h3>
+                        <form
+                            class="membership-form"
+                            action="form-success.html"
+                            method="GET"
+                        >
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="experience"
+                                    >E-Bike Experience</label
+                                >
+                                <select id="experience" name="experience">
+                                    <option value="beginner">
+                                        New to E-Bikes
+                                    </option>
+                                    <option value="some">
+                                        Some Experience
+                                    </option>
+                                    <option value="experienced">
+                                        Very Experienced
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input
+                                        type="checkbox"
+                                        name="safety-pledge"
+                                        required
+                                    />
+                                    <span class="checkmark"></span>
+                                    I agree to follow all safety guidelines
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                Join Now
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Ride Calendar -->
+                    <div class="sidebar-card">
+                        <h3>Ride Calendar</h3>
+                        <div class="calendar-preview">
+                            <div class="calendar-month">March 2024</div>
+                            <div class="calendar-events">
+                                <div class="event-item">
+                                    <span class="event-date">25</span>
+                                    <span class="event-title"
+                                        >River Trail Ride</span
+                                    >
+                                </div>
+                                <div class="event-item">
+                                    <span class="event-date">26</span>
+                                    <span class="event-title"
+                                        >Mountain Challenge</span
+                                    >
+                                </div>
+                                <div class="event-item">
+                                    <span class="event-date">29</span>
+                                    <span class="event-title"
+                                        >City Commuter</span
+                                    >
+                                </div>
+                            </div>
+                            <a href="#" class="view-calendar"
+                                >View Full Calendar</a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Member Spotlight -->
+                    <div class="sidebar-card" id="community">
+                        <h3>Member Spotlight</h3>
+                        <div class="member-spotlight">
+                            <div class="member-photo">
+                                <div class="placeholder-photo">JS</div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Jennifer S.</h4>
+                                <p>
+                                    "EcoRiders transformed my daily commute into
+                                    an adventure. The community support and
+                                    route knowledge is invaluable!"
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="view-testimonials"
+                            >View More Stories</a
+                        >
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EcoRiders Club</h3>
+                    <p>
+                        Promoting sustainable transportation through electric
+                        bike community riding.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Strava</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#rides">Group Rides</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Maintenance Guide</a></li>
+                        <li><a href="#">Local Laws</a></li>
+                        <li><a href="#">Route Maps</a></li>
+                        <li><a href="#">Charging Stations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@ecoridersclub.com</p>
+                    <p>Phone: (555) ECO-RIDE</p>
+                    <div class="newsletter-signup">
+                        <input
+                            type="email"
+                            placeholder="Newsletter signup"
+                            class="newsletter-input"
+                        />
+                        <button class="newsletter-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2024 EcoRiders Club. All rights reserved. | Created
+                    by Emeka MacDonald Umeh
+                </p>
+                <p>
+                    <a href="#" id="video-link" class="video-link"
+                        >📹 Project Video Demo</a
+                    >
+                    |
+                    <a href="attributions.html" class="attribution-link"
+                        >Attributions</a
+                    >
+                </p>
+            </div>
+        </footer>
+
+        <!-- Ride Registration Modal -->
+        <dialog id="ride-modal" class="ride-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Join This Ride</h3>
+                    <button
+                        class="modal-close"
+                        id="close-modal"
+                        aria-label="Close modal"
+                    >
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-ride-info"></div>
+                    <form id="ride-registration-form" class="ride-form">
+                        <div class="form-group">
+                            <label for="rider-name">Full Name *</label>
+                            <input
+                                type="text"
+                                id="rider-name"
+                                name="rider-name"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="rider-email">Email Address *</label>
+                            <input
+                                type="email"
+                                id="rider-email"
+                                name="rider-email"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="rider-phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="rider-phone"
+                                name="rider-phone"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="emergency-contact"
+                                >Emergency Contact</label
+                            >
+                            <input
+                                type="text"
+                                id="emergency-contact"
+                                name="emergency-contact"
+                                placeholder="Name and phone number"
+                            />
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input
+                                    type="checkbox"
+                                    name="safety-agreement"
+                                    required
+                                />
+                                <span class="checkmark"></span>
+                                I agree to follow all safety guidelines and club
+                                rules
+                            </label>
+                        </div>
+                        <div class="modal-actions">
+                            <button
+                                type="button"
+                                class="btn-secondary"
+                                id="cancel-registration"
+                            >
+                                Cancel
+                            </button>
+                            <button type="submit" class="btn-primary">
+                                Register for Ride
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+
+        <!-- Featured Rides Data Container -->
+        <div id="rides-data" style="display: none"></div>
+
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>

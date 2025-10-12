@@ -1,0 +1,439 @@
+{
+  "rides": [
+    {
+      "id": "scenic-river-1",
+      "title": "Scenic River Trail Adventure",
+      "date": "2024-03-25",
+      "time": "09:00",
+      "difficulty": "Beginner",
+      "distance": 15,
+      "duration": "2-3 hours",
+      "description": "Perfect ride for new members! Enjoy beautiful river views with gentle terrain and well-maintained paths.",
+      "meetingPoint": "Riverside Park Pavilion",
+      "address": "123 River Road, Riverside, CA 92501",
+      "maxParticipants": 20,
+      "currentParticipants": 12,
+      "leader": "Sarah Mitchell",
+      "leaderPhone": "(555) 123-4567",
+      "features": ["Scenic Views", "Beginner Friendly", "Rest Stops", "Photography Opportunities"],
+      "requirements": ["Helmet Required", "Charged Battery", "Water Bottle"],
+      "route": {
+        "startLat": 33.9533,
+        "startLng": -117.3962,
+        "waypoints": [
+          {"lat": 33.9545, "lng": -117.3912, "name": "River Bridge"},
+          {"lat": 33.9578, "lng": -117.3856, "name": "Wildlife Viewing Area"},
+          {"lat": 33.9612, "lng": -117.3823, "name": "Picnic Rest Stop"}
+        ]
+      },
+      "weather": "Sunny, 72°F",
+      "terrain": "Paved path with slight inclines"
+    },
+    {
+      "id": "mountain-challenge-1",
+      "title": "Mountain Challenge Trail",
+      "date": "2024-03-26",
+      "time": "08:00",
+      "difficulty": "Advanced",
+      "distance": 35,
+      "duration": "4-5 hours",
+      "description": "Challenging mountain trails for experienced riders seeking adventure. Steep climbs and technical descents.",
+      "meetingPoint": "Mountain Base Trailhead",
+      "address": "789 Mountain View Drive, Highland, CA 92346",
+      "maxParticipants": 12,
+      "currentParticipants": 8,
+      "leader": "James Lopez",
+      "leaderPhone": "(555) 234-5678",
+      "features": ["Mountain Views", "Technical Terrain", "Elevation Gain", "Advanced Skills"],
+      "requirements": ["Full Face Helmet", "Protective Gear", "High Capacity Battery", "Emergency Kit"],
+      "route": {
+        "startLat": 34.1284,
+        "startLng": -117.2089,
+        "waypoints": [
+          {"lat": 34.1356, "lng": -117.2156, "name": "Base Camp"},
+          {"lat": 34.1423, "lng": -117.2234, "name": "Summit Viewpoint"},
+          {"lat": 34.1398, "lng": -117.2178, "name": "Technical Descent Start"}
+        ]
+      },
+      "weather": "Partly Cloudy, 68°F",
+      "terrain": "Rocky trails with steep grades"
+    },
+    {
+      "id": "city-commuter-1",
+      "title": "City Commuter Route Training",
+      "date": "2024-03-29",
+      "time": "07:30",
+      "difficulty": "Intermediate",
+      "distance": 20,
+      "duration": "2.5-3 hours",
+      "description": "Learn the best commuting routes while riding with experienced city cyclists. Focus on safety and efficiency.",
+      "meetingPoint": "Downtown Transit Center",
+      "address": "456 Main Street, Downtown, CA 92101",
+      "maxParticipants": 15,
+      "currentParticipants": 10,
+      "leader": "Katie Chen",
+      "leaderPhone": "(555) 345-6789",
+      "features": ["Urban Navigation", "Traffic Safety", "Bike Lane Usage", "Charging Stations"],
+      "requirements": ["Helmet Required", "Lights", "Reflective Gear", "Lock"],
+      "route": {
+        "startLat": 32.7157,
+        "startLng": -117.1611,
+        "waypoints": [
+          {"lat": 32.7189, "lng": -117.1534, "name": "Business District"},
+          {"lat": 32.7234, "lng": -117.1456, "name": "University Campus"},
+          {"lat": 32.7278, "lng": -117.1389, "name": "Charging Station Hub"}
+        ]
+      },
+      "weather": "Clear, 70°F",
+      "terrain": "City streets with bike lanes"
+    },
+    {
+      "id": "coastal-cruise-1",
+      "title": "Coastal Cruise Experience",
+      "date": "2024-04-02",
+      "time": "10:00",
+      "difficulty": "Beginner",
+      "distance": 12,
+      "duration": "2 hours",
+      "description": "Relaxing coastal ride with ocean views and beach stops. Perfect for families and leisure riders.",
+      "meetingPoint": "Coastal Park Entrance",
+      "address": "321 Ocean Boulevard, Seaside, CA 92054",
+      "maxParticipants": 25,
+      "currentParticipants": 18,
+      "leader": "Maria Rodriguez",
+      "leaderPhone": "(555) 456-7890",
+      "features": ["Ocean Views", "Beach Stops", "Family Friendly", "Flat Terrain"],
+      "requirements": ["Helmet Required", "Sun Protection", "Water"],
+      "route": {
+        "startLat": 33.0392,
+        "startLng": -117.2908,
+        "waypoints": [
+          {"lat": 33.0456, "lng": -117.2945, "name": "Pier Overlook"},
+          {"lat": 33.0523, "lng": -117.2989, "name": "Beach Rest Area"},
+          {"lat": 33.0578, "lng": -117.3023, "name": "Lighthouse Point"}
+        ]
+      },
+      "weather": "Sunny, 74°F",
+      "terrain": "Paved coastal path"
+    },
+    {
+      "id": "desert-adventure-1",
+      "title": "Desert Adventure Trail",
+      "date": "2024-04-05",
+      "time": "06:30",
+      "difficulty": "Advanced",
+      "distance": 28,
+      "duration": "4 hours",
+      "description": "Early morning desert ride through stunning landscapes. Challenging terrain with unique flora and fauna.",
+      "meetingPoint": "Desert Visitor Center",
+      "address": "567 Desert Road, Palm Springs, CA 92262",
+      "maxParticipants": 10,
+      "currentParticipants": 6,
+      "leader": "David Kim",
+      "leaderPhone": "(555) 567-8901",
+      "features": ["Desert Scenery", "Wildlife Viewing", "Early Start", "Photography"],
+      "requirements": ["Extra Water", "Sun Protection", "GPS Device", "First Aid"],
+      "route": {
+        "startLat": 33.8303,
+        "startLng": -116.5453,
+        "waypoints": [
+          {"lat": 33.8456, "lng": -116.5623, "name": "Cactus Garden"},
+          {"lat": 33.8578, "lng": -116.5789, "name": "Vista Point"},
+          {"lat": 33.8634, "lng": -116.5845, "name": "Desert Oasis"}
+        ]
+      },
+      "weather": "Clear, 78°F",
+      "terrain": "Sandy trails with rocky sections"
+    },
+    {
+      "id": "wine-country-1",
+      "title": "Wine Country Scenic Tour",
+      "date": "2024-04-08",
+      "time": "10:30",
+      "difficulty": "Intermediate",
+      "distance": 22,
+      "duration": "3-4 hours",
+      "description": "Leisurely ride through beautiful wine country with optional tasting stops. Rolling hills and vineyard views.",
+      "meetingPoint": "Wine Country Visitor Center",
+      "address": "890 Vineyard Lane, Temecula, CA 92591",
+      "maxParticipants": 20,
+      "currentParticipants": 14,
+      "leader": "Lisa Thompson",
+      "leaderPhone": "(555) 678-9012",
+      "features": ["Vineyard Views", "Tasting Options", "Rolling Hills", "Group Social"],
+      "requirements": ["ID for Tastings", "Helmet", "Designated Driver Concept"],
+      "route": {
+        "startLat": 33.4936,
+        "startLng": -117.1483,
+        "waypoints": [
+          {"lat": 33.5023, "lng": -117.1567, "name": "Hillside Vineyard"},
+          {"lat": 33.5145, "lng": -117.1634, "name": "Tasting Room"},
+          {"lat": 33.5234, "lng": -117.1712, "name": "Valley Overlook"}
+        ]
+      },
+      "weather": "Partly Cloudy, 76°F",
+      "terrain": "Paved roads with gentle hills"
+    },
+    {
+      "id": "urban-exploration-1",
+      "title": "Urban Exploration Discovery",
+      "date": "2024-04-12",
+      "time": "09:15",
+      "difficulty": "Beginner",
+      "distance": 16,
+      "duration": "2.5 hours",
+      "description": "Discover hidden gems in the urban landscape. Art districts, parks, and local culture exploration.",
+      "meetingPoint": "City Arts District",
+      "address": "234 Arts Plaza, Metro City, CA 90210",
+      "maxParticipants": 18,
+      "currentParticipants": 11,
+      "leader": "Alex Johnson",
+      "leaderPhone": "(555) 789-0123",
+      "features": ["Urban Art", "Cultural Sites", "Local Cafes", "Photo Stops"],
+      "requirements": ["Helmet", "Lock", "Camera Optional"],
+      "route": {
+        "startLat": 34.0522,
+        "startLng": -118.2437,
+        "waypoints": [
+          {"lat": 34.0567, "lng": -118.2389, "name": "Mural District"},
+          {"lat": 34.0623, "lng": -118.2334, "name": "Historic Park"},
+          {"lat": 34.0678, "lng": -118.2278, "name": "Local Market"}
+        ]
+      },
+      "weather": "Sunny, 73°F",
+      "terrain": "City streets and park paths"
+    },
+    {
+      "id": "sunset-hills-1",
+      "title": "Sunset Hills Evening Ride",
+      "date": "2024-04-15",
+      "time": "17:00",
+      "difficulty": "Intermediate",
+      "distance": 18,
+      "duration": "2.5 hours",
+      "description": "Evening ride through rolling hills with spectacular sunset views. Perfect end to the day.",
+      "meetingPoint": "Hilltop Community Center",
+      "address": "345 Hill Crest Drive, Vista, CA 92083",
+      "maxParticipants": 16,
+      "currentParticipants": 9,
+      "leader": "Michael Chang",
+      "leaderPhone": "(555) 890-1234",
+      "features": ["Sunset Views", "Hill Climbing", "Evening Ride", "Group Photos"],
+      "requirements": ["Lights Required", "Reflective Gear", "Helmet"],
+      "route": {
+        "startLat": 33.2000,
+        "startLng": -117.2425,
+        "waypoints": [
+          {"lat": 33.2123, "lng": -117.2567, "name": "Scenic Overlook"},
+          {"lat": 33.2234, "lng": -117.2689, "name": "Summit Point"},
+          {"lat": 33.2345, "lng": -117.2734, "name": "Sunset Viewing Area"}
+        ]
+      },
+      "weather": "Clear, 71°F",
+      "terrain": "Rolling hills with moderate climbs"
+    },
+    {
+      "id": "forest-trail-1",
+      "title": "Forest Trail Nature Ride",
+      "date": "2024-04-18",
+      "time": "08:45",
+      "difficulty": "Intermediate",
+      "distance": 24,
+      "duration": "3-4 hours",
+      "description": "Immersive forest experience with shaded trails and wildlife spotting opportunities.",
+      "meetingPoint": "Forest Service Station",
+      "address": "678 Forest Road, Pine Valley, CA 91962",
+      "maxParticipants": 14,
+      "currentParticipants": 7,
+      "leader": "Rachel Green",
+      "leaderPhone": "(555) 901-2345",
+      "features": ["Forest Trails", "Wildlife Spotting", "Shaded Route", "Nature Education"],
+      "requirements": ["Helmet", "Bug Spray", "Extra Battery", "Trail Snacks"],
+      "route": {
+        "startLat": 32.7353,
+        "startLng": -116.5281,
+        "waypoints": [
+          {"lat": 32.7456, "lng": -116.5389, "name": "Pine Grove"},
+          {"lat": 32.7567, "lng": -116.5456, "name": "Creek Crossing"},
+          {"lat": 32.7634, "lng": -116.5523, "name": "Meadow Clearing"}
+        ]
+      },
+      "weather": "Partly Cloudy, 69°F",
+      "terrain": "Dirt trails with tree cover"
+    },
+    {
+      "id": "historic-route-1",
+      "title": "Historic Route Heritage Ride",
+      "date": "2024-04-22",
+      "time": "09:30",
+      "difficulty": "Beginner",
+      "distance": 14,
+      "duration": "2-3 hours",
+      "description": "Educational ride exploring local history with stops at landmarks and historical sites.",
+      "meetingPoint": "Heritage Museum Parking",
+      "address": "123 Heritage Way, Old Town, CA 92110",
+      "maxParticipants": 22,
+      "currentParticipants": 16,
+      "leader": "Patricia Williams",
+      "leaderPhone": "(555) 012-3456",
+      "features": ["Historical Sites", "Educational Stops", "Guided Tour", "Local History"],
+      "requirements": ["Helmet", "Notebook Optional", "Comfortable Pace"],
+      "route": {
+        "startLat": 32.7542,
+        "startLng": -117.1983,
+        "waypoints": [
+          {"lat": 32.7598, "lng": -117.1934, "name": "Mission Site"},
+          {"lat": 32.7645, "lng": -117.1876, "name": "Historic Plaza"},
+          {"lat": 32.7698, "lng": -117.1823, "name": "Heritage Garden"}
+        ]
+      },
+      "weather": "Sunny, 75°F",
+      "terrain": "Paved paths and quiet streets"
+    },
+    {
+      "id": "lake-circuit-1",
+      "title": "Lake Circuit Challenge",
+      "date": "2024-04-25",
+      "time": "07:00",
+      "difficulty": "Advanced",
+      "distance": 32,
+      "duration": "4-5 hours",
+      "description": "Complete circuit around the lake with varied terrain and challenging sections for experienced riders.",
+      "meetingPoint": "Lake Marina Dock",
+      "address": "789 Lakeshore Drive, Lake View, CA 92040",
+      "maxParticipants": 12,
+      "currentParticipants": 8,
+      "leader": "Robert Taylor",
+      "leaderPhone": "(555) 123-4567",
+      "features": ["Lake Views", "Full Circuit", "Varied Terrain", "Endurance Challenge"],
+      "requirements": ["High Capacity Battery", "Energy Snacks", "Tool Kit", "First Aid"],
+      "route": {
+        "startLat": 32.8731,
+        "startLng": -117.0206,
+        "waypoints": [
+          {"lat": 32.8845, "lng": -117.0134, "name": "North Shore"},
+          {"lat": 32.8923, "lng": -117.0289, "name": "East Peninsula"},
+          {"lat": 32.8789, "lng": -117.0378, "name": "South Overlook"}
+        ]
+      },
+      "weather": "Clear, 72°F",
+      "terrain": "Mixed pavement and gravel"
+    },
+    {
+      "id": "beginner-skills-1",
+      "title": "Beginner Skills Workshop Ride",
+      "date": "2024-04-29",
+      "time": "10:00",
+      "difficulty": "Beginner",
+      "distance": 8,
+      "duration": "2 hours",
+      "description": "Skills development ride for new e-bike riders. Focus on safety, handling, and basic maintenance.",
+      "meetingPoint": "Community Center Parking",
+      "address": "456 Community Drive, Centertown, CA 92008",
+      "maxParticipants": 15,
+      "currentParticipants": 12,
+      "leader": "Jennifer Adams",
+      "leaderPhone": "(555) 234-5678",
+      "features": ["Skills Training", "Safety Focus", "Maintenance Tips", "Q&A Session"],
+      "requirements": ["Helmet", "Willingness to Learn", "Basic Tools"],
+      "route": {
+        "startLat": 33.1581,
+        "startLng": -117.3506,
+        "waypoints": [
+          {"lat": 33.1623, "lng": -117.3456, "name": "Practice Area"},
+          {"lat": 33.1667, "lng": -117.3398, "name": "Skills Course"},
+          {"lat": 33.1698, "lng": -117.3367, "name": "Rest and Review"}
+        ]
+      },
+      "weather": "Sunny, 71°F",
+      "terrain": "Flat practice areas and gentle paths"
+    },
+    {
+      "id": "night-ride-1",
+      "title": "Night Lights Urban Ride",
+      "date": "2024-05-03",
+      "time": "19:30",
+      "difficulty": "Intermediate",
+      "distance": 20,
+      "duration": "2.5 hours",
+      "description": "Special night ride through illuminated city areas. Experience the city in a new light.",
+      "meetingPoint": "Central Plaza Fountain",
+      "address": "123 Central Plaza, Metro City, CA 90015",
+      "maxParticipants": 12,
+      "currentParticipants": 5,
+      "leader": "Carlos Martinez",
+      "leaderPhone": "(555) 345-6789",
+      "features": ["Night Riding", "City Lights", "Illuminated Routes", "Unique Experience"],
+      "requirements": ["Front and Rear Lights", "Reflective Clothing", "Helmet with Light"],
+      "route": {
+        "startLat": 34.0522,
+        "startLng": -118.2437,
+        "waypoints": [
+          {"lat": 34.0589, "lng": -118.2378, "name": "Light District"},
+          {"lat": 34.0645, "lng": -118.2298, "name": "Waterfront Promenade"},
+          {"lat": 34.0698, "lng": -118.2234, "name": "Observatory Hill"}
+        ]
+      },
+      "weather": "Clear, 68°F",
+      "terrain": "Well-lit city streets and paths"
+    },
+    {
+      "id": "charity-ride-1",
+      "title": "Charity Fundraiser Community Ride",
+      "date": "2024-05-06",
+      "time": "09:00",
+      "difficulty": "Beginner",
+      "distance": 25,
+      "duration": "3-4 hours",
+      "description": "Special charity event supporting local environmental causes. Fun ride with community spirit.",
+      "meetingPoint": "Environmental Center",
+      "address": "890 Green Street, Eco City, CA 92126",
+      "maxParticipants": 50,
+      "currentParticipants": 32,
+      "leader": "Amanda Foster",
+      "leaderPhone": "(555) 456-7890",
+      "features": ["Charity Event", "Community Focus", "Environmental Cause", "Group Celebration"],
+      "requirements": ["Registration Fee", "Helmet", "Water Bottle", "Positive Attitude"],
+      "route": {
+        "startLat": 32.8328,
+        "startLng": -117.2713,
+        "waypoints": [
+          {"lat": 32.8456, "lng": -117.2634, "name": "Park Entrance"},
+          {"lat": 32.8578, "lng": -117.2556, "name": "Community Garden"},
+          {"lat": 32.8645, "lng": -117.2489, "name": "Finish Line Celebration"}
+        ]
+      },
+      "weather": "Sunny, 74°F",
+      "terrain": "Mostly flat with park paths"
+    },
+    {
+      "id": "advanced-technical-1",
+      "title": "Advanced Technical Skills",
+      "date": "2024-05-10",
+      "time": "08:00",
+      "difficulty": "Advanced",
+      "distance": 30,
+      "duration": "4-5 hours",
+      "description": "Advanced technical riding workshop covering difficult terrain and advanced e-bike handling techniques.",
+      "meetingPoint": "Technical Training Center",
+      "address": "567 Challenge Road, Extreme, CA 92071",
+      "maxParticipants": 8,
+      "currentParticipants": 6,
+      "leader": "Steve Wilson",
+      "leaderPhone": "(555) 567-8901",
+      "features": ["Technical Skills", "Advanced Techniques", "Challenging Terrain", "Expert Instruction"],
+      "requirements": ["Advanced E-bike", "Full Protection Gear", "High Skill Level", "Waiver Required"],
+      "route": {
+        "startLat": 33.2519,
+        "startLng": -117.1611,
+        "waypoints": [
+          {"lat": 33.2634, "lng": -117.1734, "name": "Technical Section A"},
+          {"lat": 33.2756, "lng": -117.1823, "name": "Advanced Obstacles"},
+          {"lat": 33.2834, "lng": -117.1889, "name": "Skills Assessment"}
+        ]
+      },
+      "weather": "Partly Cloudy, 70°F",
+      "terrain": "Technical trails with obstacles"
+    }
+  ]
+}
